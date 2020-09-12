@@ -71,17 +71,25 @@ The code for MaskNet can be seen [here](deepnet/model/models/masknet.py)
 <p align='center'>
      <img src="./images/depthMap.gif">
 </p>
+
 ### Architecture
+
+<p align="center">
+     <img src="images/depthnet.png" width="700px" height="450px" >
+</p>
+
 In the architecture **bg** denotes the background image and **bg_fg** denotes background-foreground image. DepthNet follows a encoder-decoder model, since we want images as an output, we convolve the images to get the features by encoding and then convolve up, namely `UpSample`, decoding the image to reach it's initial dimension.
 
-![depthnet](images/depthnet.png)
-
+<p align="center">
+     <img src="images/encoder.png" width="350px" height="250px" >
+</p>
 
 The model is fully convolutional and includes efficient residual up-sampling blocks — decoder — that track high-dimensional regression problems.   
 The first section of the network is proprietary for combining the the inputs together by concatenating them. The second part is a sequence of convolutional and interpolate layers that guide the network in learning its upscaling. In the end a final convolution is applied that yeilds the final predictions. 
 
-<img src="images/encoder.png" width="210px">
-<img src="images/decoder.png" width="210px">
+<p align="center">
+     <img src="images/decoder.png" width="350px" height="250px" >
+</p>
 
 ### Approach for DepthNet
 
