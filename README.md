@@ -331,7 +331,7 @@ Following is the behaviour of some of the combination of loss functions:
 
 
 ### Experiments
-To look at the all experiments I have performed, go [here](deepnet/experiments)
+To look at the all experiments I have performed, go [here](./experiments)
 
 ## Project Setup
 
