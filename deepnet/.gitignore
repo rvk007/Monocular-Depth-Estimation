@@ -1,0 +1,22 @@
+.vscode/
+.idea/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+*.swp
+pypi_upload.sh
+
+# Distribution / packaging
+bin/
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
